@@ -13,6 +13,10 @@
     padding: 0;
     margin: 0;
 }
+@font-face {
+    font-family: 'ReggaeOne';
+    src: url(../fonts/ReggaeOne-Regular.ttf);
+}
 html {
     scroll-behavior: smooth;
 }
@@ -128,12 +132,14 @@ header nav ul li a {
 .landing .rectangle .text {
     padding: 20px;
     color: var(--third-color);
-    font-size: 25px;
+    font-size: 18px;
 }
 .landing .rectangle .text h2 {
     margin-top: 78px;
     font-size: 67px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-family: 'ReggaeOne', sans-serif;
+    letter-spacing: 4px;
 }
 .landing .rectangle .text p {
     margin-top: 70px;
@@ -144,6 +150,7 @@ header nav ul li a {
     text-align: center;
     margin-top: 75px;
     font-size: 40px;
+    font-family: 'ReggaeOne', sans-serif;
 }
 .mini-menu h2 span {
     display: block;
@@ -160,9 +167,106 @@ header nav ul li a {
     gap: 75px;
 }
 
-
-
-
-
-
+.cards-parent h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cards-parent p {
+    line-height: 1.5;
+}
+.cards-parent h3 {
+    margin-top: 40px;
+    font-size: 32px;
+}
+.but-one {
+    padding: 25px;
+    width: fit-content;
+    margin: auto;
+}
+.but-one .test-button {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    background-color: var(--second-color);
+    margin-bottom: 100px;
+}
+.but-one .test-button a {
+    text-decoration: none;
+    color: var(--third-color);
+}
 /* End Mini Menu */
+/* Start About Us */
+.about-us-container {
+    background-color: var(--second-color);
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.about-us-container h2 {
+    position: absolute;
+    margin-top: 70px;
+    color: var(--third-color);
+    font-family: 'ReggaeOne', sans-serif;
+    font-size: 40px;
+}
+.about-us-container .star-image img {
+    height: 386px;
+    position: absolute;
+    bottom: 24%;
+    left: 0;
+    margin-left: 25%;
+}
+.about-us-container .content-text {
+    width: 347px;
+    position: absolute;
+    bottom: 39%;
+    line-height: 2.5;
+    left: 54%;
+}
+.about-us-container .content-text p {
+    color: white;
+}
+.but-two {
+    position: absolute;
+    bottom: 30%;
+    left: 54%;
+}
+.but-two .button-two {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+}
+.button-two a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+/* End About Us */
+/* Start Footer */
+.f-container {
+    background-color: var(--third-color);
+    min-height: 182px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+.f-container p {
+    margin-top: 45px;
+}
+.f-container img {
+    height: 40px;
+    margin-top: 35px;
+}
+footer .copyright {
+    text-align: center;
+    position: relative;
+    margin-bottom: 6%;
+    margin-top: -2%;
+}
+/* End Footer */

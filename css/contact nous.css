@@ -1,0 +1,151 @@
+/* Start Variables */
+:root {
+    --main-color: #000000;
+    --second-color: #789AA5;
+    --third-color: #FFFFFF;
+}
+/* End Variables */
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'ReggaeOne';
+    src: url(../fonts/ReggaeOne-Regular.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: black; */
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Start Header */
+header {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+header .container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 97px;
+}
+header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav .toggle-menu {
+    color: var(--main-color);
+    font-size: 35px;
+}
+@media (min-width: 768px) {
+    header nav .toggle-menu {
+        display: none;
+    }
+}
+header nav ul {
+    display: flex;
+}
+@media(max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
+    header nav .toggle-menu:hover + ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+    }
+    header nav ul li a {
+        padding: 15px !important;
+    }
+}
+header nav ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 40px;
+}
+/* End Header */
+/* Start Form */
+
+
+
+/* .form-container {
+    min-height: 100vh;
+    background-color: var(--second-color);
+    background-size: cover;
+    position: relative;
+}
+.form-container .form-styling {
+    position: absolute;
+    bottom: 0;
+    margin-left: 20%;
+}
+.name,
+.last-name,
+.email {
+    padding: 20px;
+}
+input[type=text],[type=email] {
+    padding: 9px;
+    border: none;
+    border-radius: 9px;
+}
+label {
+    display: block;
+}
+.message {
+margin-left: 19px;
+} */
+
+
+
+
+/* End Form */
