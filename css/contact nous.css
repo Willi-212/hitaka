@@ -56,10 +56,10 @@ ul {
 /* Start Header */
 header {
     background-color: white;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     width: 100%;
-    z-index: 2;
+    /* z-index: 2; */
 }
 header .container {
     background-color: white;
@@ -114,38 +114,83 @@ header nav ul li a {
 }
 /* End Header */
 /* Start Form */
-
-
-
-/* .form-container {
-    min-height: 100vh;
+.form-container {
     background-color: var(--second-color);
     background-size: cover;
-    position: relative;
+    min-height: 82vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+    justify-content: space-around;
+    align-items: center;
 }
-.form-container .form-styling {
-    position: absolute;
-    bottom: 0;
-    margin-left: 20%;
+.form-container img {
+    height: 290px;
+    width: 100%;
 }
-.name,
-.last-name,
-.email {
-    padding: 20px;
+.form-container form .first-two-divs {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 0;
+
 }
-input[type=text],[type=email] {
-    padding: 9px;
+.form-container form div{
+    margin-bottom: 1rem;
+}
+.form-container form div input,
+.form-container form div textarea {
+    width: 100%;
+    padding: 1rem;
     border: none;
-    border-radius: 9px;
+    border-radius: 5px;
 }
-label {
-    display: block;
+
+@media (max-width: 767px) {
+    .first-two-divs {
+        flex-wrap: wrap;
+        gap: 0 !important;
+        margin-top: 5%;
+    }
+    .first-two-divs div {
+        width: 100%;
+    }
 }
-.message {
-margin-left: 19px;
-} */
-
-
-
-
+@media (max-width: 1224px) {
+    .first-two-divs {
+        flex-wrap: wrap;
+        gap: 0 !important;
+        margin-top: 5%;
+    }
+    .first-two-divs div {
+        width: 100%;
+    }
+}
+.form-container .but-subm {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5%;
+}
 /* End Form */
+/* Start Footer */
+.f-container {
+    background-color: var(--third-color);
+    min-height: 182px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+.f-container p {
+    margin-top: 45px;
+}
+.f-container img {
+    height: 40px;
+    margin-top: 35px;
+}
+footer .copyright {
+    text-align: center;
+    position: relative;
+    margin-bottom: 6%;
+    margin-top: -2%;
+}
+/* End Footer */
