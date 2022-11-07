@@ -79,7 +79,7 @@ header nav .toggle-menu {
     color: var(--main-color);
     font-size: 35px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     header nav .toggle-menu {
         display: none;
     }
@@ -87,7 +87,7 @@ header nav .toggle-menu {
 header nav ul {
     display: flex;
 }
-@media(max-width: 768px) {
+@media(max-width: 992px) {
     header nav ul {
         display: none;
     }
@@ -119,6 +119,7 @@ header nav ul li a {
     background-color: var(--second-color);
     background-image: url('../images/bg.png');
     background-size: cover;
+    background-position: center;
     /* position: relative; */
 }
 .landing .rectangle {
@@ -148,7 +149,8 @@ header nav ul li a {
 /* Start Mini Menu */
 .mini-menu h2 {
     text-align: center;
-    margin-top: 75px;
+    margin-top: 2em;
+    margin-bottom:  2em;
     font-size: 40px;
     font-family: 'ReggaeOne', sans-serif;
 }
@@ -157,12 +159,10 @@ header nav ul li a {
 }
 
 .cards-parent {
-    padding: 75px;
-    margin-top: 75px;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 85%;
+    margin: auto;
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr)) ;
     text-align: center;
     gap: 75px;
 }
@@ -221,6 +221,8 @@ header nav ul li a {
     left: 0;
     margin-left: 25%;
 }
+
+
 .about-us-container .content-text {
     width: 347px;
     position: absolute;
@@ -231,6 +233,8 @@ header nav ul li a {
 .about-us-container .content-text p {
     color: white;
 }
+
+
 .but-two {
     position: absolute;
     bottom: 30%;
@@ -254,6 +258,7 @@ header nav ul li a {
     min-height: 182px;
     background-size: cover;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .f-container p {
@@ -270,3 +275,49 @@ footer .copyright {
     margin-top: -2%;
 }
 /* End Footer */
+
+
+@media (max-width:949px) {
+    .about-us-container{
+
+        display: grid;
+    }
+}
+
+@media (max-width:949px) {
+    .star-image{
+        width: 50%;
+        margin: auto;
+    }
+    .about-us-container .star-image img {
+        width: 100%;
+        position: relative;
+        bottom: auto;
+        left: 0;
+        margin-left: auto;
+    }  
+    .about-us-container .content-text {
+        width: 50%;
+        margin: auto;
+        position: relative;
+        bottom: auto;
+        line-height: 2.5;
+        left: auto;
+    } 
+
+    .but-two{
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+    .about-us-container h2 {
+        position: relative;
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-family: 'ReggaeOne', sans-serif;
+        font-size: 3rem;
+    }
+}

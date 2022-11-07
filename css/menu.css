@@ -122,9 +122,11 @@ header nav ul li a {
     text-align: center;
 }
 .menu-container .buttons {
+    width: 85;
+    margin: auto;
     margin-top: 7%;
-    width: 700px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .menu-container .buttons button {
@@ -142,7 +144,13 @@ header nav ul li a {
 .menu-container .shop-button {
     display: flex;
     justify-content: flex-end;
-    transform: translateY(-42px);
+    /* transform: translateY(-42px); */
+}
+
+.option-button {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
 }
 .menu-container .shop-button i {
     font-size: 45px;
@@ -152,10 +160,11 @@ header nav ul li a {
 .grid-container {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     column-gap: 20px;
     row-gap: 100px;
     margin-bottom: 100px;
+    justify-items: center;
 }
 .grid-container .food-card-info {
     width: 300px;
@@ -198,6 +207,7 @@ header nav ul li a {
     min-height: 182px;
     background-size: cover;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .f-container p {
