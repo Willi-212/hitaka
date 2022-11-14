@@ -79,7 +79,7 @@ header nav .toggle-menu {
     color: var(--main-color);
     font-size: 35px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     header nav .toggle-menu {
         display: none;
     }
@@ -87,11 +87,11 @@ header nav .toggle-menu {
 header nav ul {
     display: flex;
 }
-@media(max-width: 768px) {
+@media(max-width: 992px) {
     header nav ul {
         display: none;
     }
-    header nav .toggle-menu:hover + ul {
+    .show{
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -100,6 +100,15 @@ header nav ul {
         width: 100%;
         background-color: white;
     }
+    /* header nav .toggle-menu:hover + ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+    } */
     header nav ul li a {
         padding: 15px !important;
     }
@@ -137,10 +146,43 @@ header nav ul li a {
     border-radius: 5px;
     color: var(--second-color);
 }
-.menu-container .buttons .selected-button {
+/* .menu-container .buttons .selected-button {
     background-color: var(--second-color);
     color: white;
+} */
+
+
+
+
+
+/* .show {
+    display: block;
 }
+
+.menu-container .buttons .js-btn:hover {
+    background-color: var(--second-color);
+    color: var(--third-color);
+    cursor: pointer; 
+}*/
+
+/* .container .box {
+    display: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .menu-container .shop-button {
     display: flex;
     justify-content: flex-end;
