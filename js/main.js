@@ -6,6 +6,14 @@ let obento = document.querySelector("#btn-obento");
 let all = document.querySelector("#btn-all");
 let sushi = document.querySelector("#btn-sushi");
 
+all.addEventListener('click',()=>{
+  cards.forEach((element)=>{
+    element.style.display = "block";
+    if(!element.classList.contains("box")){
+      element.style.display = "none";
+    }
+  })
+})
 sushi.addEventListener('click',()=>{
   cards.forEach((element)=>{
     element.style.display = "block";
