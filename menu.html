@@ -32,6 +32,19 @@
                     <li><a href="contact nous.html">Contact</a></li>
                 </ul>
             </nav>
+            <div class="cart">
+                <i class="fa-sharp fa-solid fa-cart-shopping" id="carte"></i>
+                <div class="cart-bx">
+                    <p>Your orders</p>
+                    <div class="products">
+                        
+                    </div>
+                    <div class="buy-now">
+                        <button class="buy">Buy now </button>
+                        <p>total: <span id="total">0.0</span>€ </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 <!-- End Header -->
@@ -39,16 +52,13 @@
     <div class="container menu-container">
         <h2>Menu</h2>
         <div class="buttons">
-        <div class="option-button">
-            <button class="selected-button js-btn" id="btn-all">Tous</button>
-            <button id="btn-sushi" >Sushi</button>
-            <button id="btn-salade" >Salade</button>
-            <button id="btn-obento" >Obento</button>
-            <button id="btn-plat" >Plats</button>
-        </div>
-        <div class="shop-button">
-            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-        </div>
+            <div class="option-button">
+                <button class="selected-button js-btn" id="btn-all">Tous</button>
+                <button id="btn-sushi" >Sushi</button>
+                <button id="btn-salade" >Salade</button>
+                <button id="btn-obento" >Obento</button>
+                <button id="btn-plat" >Plats</button>
+            </div>
         </div>
     </div>
 <!-- End Menu -->
@@ -58,84 +68,88 @@
             <img src="images/sushi.png" alt="">
             <h2>Rouleaux de sushi</h2>
             <p>anguille, saumon, avocat, concombre, feuilles de nori et fromage à la crème à l'intérieur</p>
-            <h3>39.99€ <h3><br><input type="checkbox" name="test" value=39.99 OnClick="Calculate(this);"/> <br/>
+            <h3><span class="price">39.99</span>€</h3>
+            <button class="add-btn">Selecter</button>
+            <!-- <br><input type="checkbox" name="test" value=39.99 OnClick="Calculate(this);"/> <br/> -->
         </div>
         <div class="food-card-info box sushi">
             <img src="images/Saumon fumé.png" alt="">
-            <h2>Saumon fumé</h2>
+            <h2 class="p-name">Saumon fumé</h2>
             <p>anguille, saumon, avocat, concombre, feuilles de nori et fromage à la crème à l'intérieur</p>
-            
-            <h3>54.00€ <h3><br><input type="checkbox" name="test" value=54.00 OnClick="Calculate(this);"/> <br/>
+            <h3><span class="price">39.99</span>€</h3>
+            <button class="add-btn">Selecter</button>
+            <!-- <h3>54.00€ <h3><br><input type="checkbox" name="test" value=54.00 OnClick="Calculate(this);"/> <br/> -->
 
         </div>
         <div class="food-card-info box sushi">
             <img src="images/California maki.png" alt="">
-            <h2>California maki</h2>
+            <h2 class="p-name">California maki</h2>
             <p>anguille, saumon, avocat, concombre, feuilles de nori et fromage à la crème à l'intérieur</p>
-            <h3>67.00€</h3><br><input type="checkbox" name="test" value=67.00 OnClick="Calculate(this);"/> <br/>
+            <!-- <h3>67.00€</h3><br><input type="checkbox" name="test" value=67.00 OnClick="Calculate(this);"/> <br/> -->
+            <button class="add-btn">Selecter</button>
         </div>
         <div class="food-card-info box sushi">
             <img src="images/Sushis végétarien.png" alt="">
             <h2>Sushis végétarien</h2>
             <p>anguille, saumon, avocat, concombre, feuilles de nori et fromage à la crème à l'intérieur</p>
-            <h3>40.00€</h3><br><input type="checkbox" name="test" value=40.00 OnClick="Calculate(this);"/> <br/>
-            <!-- <button>Selecter</button> -->
+            <!-- <h3>40.00€</h3><br><input type="checkbox" name="test" value=40.00 OnClick="Calculate(this);"/> <br/> -->
+            <button class="add-btn">Selecter</button>
         </div>
         <div class="food-card-info box sushi">
             <img src="images/Makizushi.png" alt="">
             <h2>Makizushi</h2>
             <p>anguille, saumon, avocat, concombre, feuilles de nori et fromage à la crème à l'intérieur</p>
             <h3>38.00€</h3><br><input type="checkbox" name="test" value=38.00 OnClick="Calculate(this);"/> <br/>
-            <!-- <button>Selecter</button> -->
+            <button    class="add-btn">Selecter</button>
         </div>
         <div class="food-card-info box sushi">
             <img src="images/Temaki Sushi.png" alt="">
             <h2>Temaki Sushi</h2>
             <p>anguille, saumon, avocat, concombre, feuilles de nori et fromage à la crème à l'intérieur</p>
             <h3>55.00€</h3><br><input type="checkbox" name="test" value=55.00 OnClick="Calculate(this);"/> <br/>
-            <!-- <button>Selecter</button> -->
+            <button    class="add-btn">Selecter</button>
         </div>
         <div class="food-card-info box obento">
             <img src="images/Obento.png" alt="">
             <h2>Obento</h2>
             <p>anguille, saumon, avocat, concombre, feuilles de nori et fromage à la crème à l'intérieur</p>
             <h3>39.99€</h3><br><input type="checkbox" name="test" value=39.99 OnClick="Calculate(this);"/> <br/>
-            <!-- <button>Selecter</button> -->
+            <button    class="add-btn">Selecter</button>
         </div>
         <div class="food-card-info box obento">
             <img src="images/Obento2.png" alt="">
             <h2>Obento</h2>
             <p>anguille, saumon, avocat, concombre, feuilles de nori et fromage à la crème à l'intérieur</p>
             <h3>39.99€</h3><br><input type="checkbox" name="test" value=39.99 OnClick="Calculate(this);"/> <br/>
-            <!-- <button>Selecter</button> -->
+            <button    class="add-btn">Selecter</button>
         </div>
         <div class="food-card-info box salade">
             <img src="images/Salade.png" alt="">
             <h2>Salade</h2>
             <p>anguille, saumon, avocat, concombre, feuilles de nori et fromage à la crème à l'intérieur</p>
             <h3>39.99€</h3><br><input type="checkbox" name="test" value=39.99 OnClick="Calculate(this);"/> <br/>
-            <!-- <button>Selecter</button> -->
+            <button    class="add-btn">Selecter</button>
         </div>
         <div class="food-card-info box salade">
             <img src="images/Salade2.png" alt="">
             <h2>Salade</h2>
             <p>anguille, saumon, avocat, concombre, feuilles de nori et fromage à la crème à l'intérieur</p>
             <h3>39.99€</h3><br><input type="checkbox" name="test" value=39.99 OnClick="Calculate(this);"/> <br/>
-            <!-- <button>Selecter</button> -->
+            <button    class="add-btn">Selecter</button>
         </div>
         <div class="food-card-info box plats">
             <img src="images/Plat de poissons variés.png" alt="">
             <h2>Plat de poissons variés</h2>
             <p>anguille, saumon, avocat, concombre, feuilles de nori et fromage à la crème à l'intérieur</p>
             <h3>39.99€</h3><br><input type="checkbox" name="test" value=39.99 OnClick="Calculate(this);"/> <br/>
-            <!-- <button>Selecter</button> -->
+            <button    class="add-btn">Selecter</button>
         </div>
         <div class="food-card-info box plats">
             <img src="images/Filet de Poisson.png" alt="">
             <h2>Filet de Poisson</h2>
             <p>anguille, saumon, avocat, concombre, feuilles de nori et fromage à la crème à l'intérieur</p>
             <h3>39.99€</h3><br><input type="checkbox" name="test" value=39.99 OnClick="Calculate(this);"/> <br/>
-            <!-- <button>Selecter</button> -->
+            <button    class="add-btn">Selecter</button>
         </div>
         Total : <span id="somme"> </span> &euro;
         <br><button onclick="recupValeurs();">Valider</button>
